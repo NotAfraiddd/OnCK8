@@ -3,6 +3,7 @@ package com.example.lab08;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,28 +21,30 @@ public class SignFragment extends Fragment {
     private Button btnSignIn;
     private IOnEmailAuthenListener onEmailAuthenListener;
 
-//    public SignFragment(IOnEmailAuthenListener iOnEmailAuthenListener) {
-//        this.onEmailAuthenListener = iOnEmailAuthenListener;
-//    }
+    public SignFragment(IOnEmailAuthenListener iOnEmailAuthenListener) {
+        this.onEmailAuthenListener = iOnEmailAuthenListener;
+    }
 
     @Override
     public View onCreateView( LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         View signView = inflater.inflate(R.layout.fragment_sign_in,container,false);
 
-//        txtEmail = signView.findViewById(R.id.txt_email);
-//        txtPassWord = signView.findViewById(R.id.txt_pass);
-//        btnSignIn = signView.findViewById(R.id.btn_sign_in2);
-//
-//        btnSignIn.setOnClickListener(view -> {
-//            String email =txtEmail.getText().toString();
-//            String pass = txtPassWord.getText().toString();
-//
-//            if(email.equals("") || pass.equals("")){
-//                showMess("email or pass is empty");
-//                return;
-//            }
-//            onEmailAuthenListener.signInWithPassAndEmail(email,pass);
-//        });
+        txtEmail = signView.findViewById(R.id.txt_email);
+        txtPassWord = signView.findViewById(R.id.txt_pass);
+        btnSignIn = signView.findViewById(R.id.btn_sign_in2);
+
+        btnSignIn.setOnClickListener(view -> {
+            String email =txtEmail.getText().toString();
+            String pass = txtPassWord.getText().toString();
+
+            if(email.equals("") || pass.equals("")){
+                showMess("email or pass is empty");
+                return;
+            }
+
+            Log.e("Test", email + " - " + pass);
+            onEmailAuthenListener.signInWithPassAndEmail(email,pass);
+        });
         return signView;
     }
 

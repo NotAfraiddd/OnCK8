@@ -55,13 +55,16 @@
         android:layout_width="221dp"
         android:layout_height="59dp"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="95dp"
-        android:backgroundTint="#EF77B0"
+
+        android:background="@drawable/bo_tron_btn"
         android:text="SIGN IN"
+
         android:textSize="20sp"
+        app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -72,7 +75,10 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="94dp"
-        android:backgroundTint="#03A9F4"
+
+        app:backgroundTint="@null"
+        android:background="@drawable/bo_tron_btn_exchangecolor"
+
         android:text="REGISTER"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -37,7 +37,7 @@
         android:layout_marginEnd="66dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Your name"
+        android:hint="Your name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
@@ -51,7 +51,7 @@
         android:layout_marginEnd="66dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email"
+        android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_yourName" />
@@ -64,8 +64,8 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="66dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Type password"
+        android:inputType="textPassword"
+        android:hint="Type password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_email2" />
@@ -78,23 +78,25 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="65dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Type password"
+        android:inputType="textPassword"
+        android:hint="Type password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_pass2" />
 
     <Button
         android:id="@+id/btn_register2"
-        android:layout_width="181dp"
-        android:layout_height="58dp"
+        android:layout_width="231dp"
+        android:layout_height="55dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="41dp"
         android:layout_marginEnd="110dp"
-        android:backgroundTint="#EF77B0"
 
+        android:background="@drawable/bo_tron_btn"
         android:text="REGISTER"
+
         android:textSize="20sp"
+        app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_check_pass2" />

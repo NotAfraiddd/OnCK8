@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128823877547",
+    "project_id": "demolab8-d7aa4",
+    "storage_bucket": "demolab8-d7aa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128823877547:android:2aaece0b91ec953b89fcee",
+        "android_client_info": {
+          "package_name": "com.example.lab08"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128823877547-fqsqps7f6j6dgfi0rtljlbugs36a5jps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCucnrsIi44e0RMphSJ4jAzpLUw5ZyvUFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128823877547-fqsqps7f6j6dgfi0rtljlbugs36a5jps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

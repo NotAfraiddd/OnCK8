@@ -51,7 +51,7 @@
         android:layout_marginEnd="71dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email"
+        android:hint="User name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,8 +66,8 @@
         android:layout_marginEnd="72dp"
         android:drawableRight="@drawable/group"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Type password"
+        android:inputType="textPassword"
+        android:hint="Psassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,18 +75,21 @@
 
     <Button
         android:id="@+id/btn_sign_in2"
-        android:layout_width="207dp"
-        android:layout_height="61dp"
+        android:layout_width="242dp"
+        android:layout_height="62dp"
         android:layout_marginStart="91dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="113dp"
-        android:backgroundTint="#EF77B0"
+
+        android:background="@drawable/bo_tron_btn"
         android:text="SIGN IN"
+
         android:textSize="20sp"
+        app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_pass" />
-
+<!--Hàng số 84 và 85 phải chú ý kỹ-->
     <TextView
         android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
@@ -112,7 +115,7 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="SIGN  IN WITH GOOGLE"
+        android:text="SIGN IN WITH GOOGLE"
         android:textColor="#2D58F3"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
